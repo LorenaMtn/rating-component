@@ -13,10 +13,11 @@
     background-color: hsl(213, 19%, 18%);
     font-size: 15px;
     overflow: hidden;
-    height: 360px;
-    width: 360px;
+    height: 370px;
+    width: 370px;
     border-radius: 20px;
     padding: 30px;
+    
 
 
     .cardContainer {
@@ -57,16 +58,20 @@
                 background-color: hsl(217, 12%, 63%)
             }
 
-            &:active {
-                background-color: hsl(25, 97%, 53%);
-            }
         }
+
+        .rating-link-active{
+            background-color: hsl(25, 97%, 53%);
+        }
+        
+
 
         h5 {
             margin-bottom: 3px;
             font-weight: 300;
             text-align: center
         }
+
         .rating-btn {
             display: flex;
             align-items: center;
@@ -89,5 +94,27 @@
         }
 
 
+    }
+
+    .thankYouContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        .thankYouSteps{
+            padding: 5px 15px;
+            border-radius: 25px;
+            margin: 28px 0px;
+            background-color: hsl(213, 19%, 28%);
+            color: hsl(25, 97%, 53%);
+        }
+        .thankYou-description{
+            margin-top: 16px;
+            text-align: center;
+            font-weight: 300;
+            color: hsl(217, 12%, 63%)
+        }
     }
 }

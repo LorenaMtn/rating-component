@@ -1,16 +1,16 @@
 <template id="app">
       <div id="app-container">
-        <CardComponent />
+        <RatingCard />
   </div>
 </template>
 
 <script>
-import CardComponent from "./components/CardComponent.vue";
+import RatingCard from "./components/RatingCard.vue";
 
 export default {
   name: "app",
   components: {
-    CardComponent,
+    RatingCard,
   },
 };
 </script>
