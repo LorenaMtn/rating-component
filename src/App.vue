@@ -1,6 +1,9 @@
 <template id="app">
-      <div id="app-container">
-        <RatingCard />
+  <div id="app-container">
+    <RatingCard
+      :ratingTitle="ratingTitle"
+      :ratingDescription="ratingDescription"
+    />
   </div>
 </template>
 
@@ -11,6 +14,13 @@ export default {
   name: "app",
   components: {
     RatingCard,
+  },
+  data() {
+    return {
+      ratingTitle: "How did we do?",
+      ratingDescription:
+        "Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!",
+    };
   },
 };
 </script>
